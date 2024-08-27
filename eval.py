@@ -18,11 +18,11 @@ import os
 import time
 import numpy as np
 import cv2
-from src.model_utils.config import config
-from src.model_utils.moxing_adapter import moxing_wrapper
-from src.model_utils.device_adapter import get_device_id, get_device_num
-from src.textfusenet.text_fuse_net_r101 import Text_Fuse_Net_Resnet101
-from src.dataset import data_to_mindrecord_byte_image, create_textfusenet_dataset
+from .src.model_utils.config import config
+from .src.model_utils.moxing_adapter import moxing_wrapper
+from .src.model_utils.device_adapter import get_device_id, get_device_num
+from .src.textfusenet.text_fuse_net_r101 import Text_Fuse_Net_Resnet101
+from .src.dataset import data_to_mindrecord_byte_image, create_textfusenet_dataset
 
 from pycocotools.coco import COCO
 from mindspore import context, Tensor

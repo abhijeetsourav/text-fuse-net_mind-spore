@@ -19,7 +19,7 @@ import numpy as np
 from PIL import Image
 from pycocotools.coco import COCO
 
-from src.model_utils.config import config
+from .src.model_utils.config import config
 
 dst_width = config.img_width
 dst_height = config.img_height

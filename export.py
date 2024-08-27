@@ -15,10 +15,10 @@
 """export checkpoint file into air, onnx, mindir models"""
 
 import numpy as np
-from src.model_utils.config import config
-from src.model_utils.device_adapter import get_device_id
-from src.model_utils.moxing_adapter import moxing_wrapper
-from src.textfusenet.text_fuse_net_r101 import TextFuseNet_Infer
+from .src.model_utils.config import config
+from .src.model_utils.device_adapter import get_device_id
+from .src.model_utils.moxing_adapter import moxing_wrapper
+from .src.textfusenet.text_fuse_net_r101 import TextFuseNet_Infer
 from mindspore import Tensor, context, load_checkpoint, load_param_into_net, export
 
 
